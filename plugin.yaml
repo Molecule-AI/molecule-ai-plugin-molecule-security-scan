@@ -1,0 +1,18 @@
+name: molecule-ai-plugin-molecule-security-scan
+version: 0.1.0
+description: Supply-chain CVE gate for skill dependencies. Wraps builtin_tools/security_scan.py. Runs Snyk or pip-audit against a skill's requirements.txt before the skill loads, blocking or warning on critical/high CVEs. Opt-in per workspace.
+skill: skill-cve-gate
+tags:
+  - security
+  - cve
+  - supply-chain
+  - snyk
+  - pip-audit
+runtimes:
+  langgraph: ">=0.2.0"
+  claude_code: ">=0.6.0"
+  deepagents: ">=0.4.0"
+wraps:
+  - builtin_tools/security_scan.py
+entry: molecule_security_scan
+requires: []
