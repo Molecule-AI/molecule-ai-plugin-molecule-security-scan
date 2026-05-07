@@ -148,7 +148,7 @@ security_scan:
 ### Setup
 
 ```bash
-git clone https://github.com/Molecule-AI/molecule-ai-plugin-molecule-security-scan.git
+git clone https://git.moleculesai.app/molecule-ai/molecule-ai-plugin-molecule-security-scan.git
 cd molecule-ai-plugin-molecule-security-scan
 
 # Validate plugin.yaml
