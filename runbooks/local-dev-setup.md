@@ -16,7 +16,7 @@ This runbook covers setting up a local development environment for
 ## Clone & Bootstrap
 
 ```bash
-git clone https://github.com/Molecule-AI/molecule-ai-plugin-molecule-security-scan.git
+git clone https://git.moleculesai.app/molecule-ai/molecule-ai-plugin-molecule-security-scan.git
 cd molecule-ai-plugin-molecule-security-scan
 ```
 
