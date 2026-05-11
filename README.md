@@ -51,11 +51,13 @@ security_scan:
 
 ```
 skills/
-  skill-cve-gate/   # SKILL.md — agent guidance on CVE findings
+  skill-cve-gate/
+    SKILL.md   # Agent-side guidance on when to activate the CVE gate
 adapters/
-  langgraph.py      # Registers scanner and gate logic
+  claude_code.py  # Installs skill via AgentskillsAdaptor; CVE gate is a pre-load
+                  # hook inside the skill loader, not an agent-callable tool
 runbooks/
-  setup.md          # Snyk token setup, pip-audit installation
+  setup.md        # Snyk token setup, pip-audit installation
 ```
 
 ## Known issues
